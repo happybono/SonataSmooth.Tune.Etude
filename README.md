@@ -53,8 +53,62 @@ Click **Start Smoothing** to process the input. The results for each selected me
 
 ### 6. Export Results
 
-- **Export to Excel** : Save results in an Excel file.
 - **Export to CSV** : Save results in a CSV file.
+- **Export to Excel** : Save results in an Excel file.
+
+#### Example: Exporting to CSV or Excel
+
+After smoothing, you can export results using the **Export to Excel** or **Export to CSV** buttons in the sample application's UI.  
+These features are implemented in the `btnExportCSV_Click` and `btnExportExcel_Click` methods of `FrmMain.cs`.
+
+**Export to CSV**  
+- Prompts for a file path, then gathers input data and smoothing parameters.
+- Creates a `CsvScoreRequest` and calls `CsvScoreWriter.ExportAsync`.
+
+```csharp
+var req = new CsvScoreRequest
+{
+    Title = "SonataSmooth Test",
+    InitialData = values,
+    Radius = radius,
+    PolyOrder = polyOrder,
+    BoundaryMode = boundary,
+    Flags = flags,
+    DerivOrder = derivOrder,
+    Alpha = alpha,
+    SigmaFactor = sigmaFactor,
+    BaseFilePath = Path.GetFileNameWithoutExtension(filePath),
+    SavePath = filePath
+};
+
+await CsvScoreWriter.ExportAsync(req, progress, CancellationToken.None);
+```
+
+**Export to Excel**  
+- Gathers input data and smoothing parameters (radius, polynomial order, boundary mode, alpha, sigma, etc.).
+- Creates an `ExcelScoreRequest` and calls `ExcelScoreWriter.ExportAsync`.
+- Progress is shown in the status bar.
+
+```csharp
+var req = new ExcelScoreRequest
+{
+    DatasetTitle = "SonataSmooth Test",
+    InitialData = values,
+    Radius = radius,
+    PolyOrder = polyOrder,
+    BoundaryMode = boundary,
+    Flags = flags,
+    DerivOrder = derivOrder,
+    Alpha = alpha,
+    OpenAfterExport = false,
+    SigmaFactor = sigmaFactor
+};
+
+await ExcelScoreWriter.ExportAsync(req, progress);
+```
+
+> Both export features include the original and all selected smoothing results in the output file.  
+> For parameter details, see [API_Documentation.xml](doc/API_Documentation.xml).
 
 ### 7. Example : Applying Smoothing in Code
 
