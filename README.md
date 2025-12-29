@@ -108,7 +108,7 @@ await ExcelScoreWriter.ExportAsync(req, progress);
 ```
 
 > Both export features include the original and all selected smoothing results in the output file.  
-> For parameter details, see [API_Documentation.xml](doc/API_Documentation.xml).
+> For parameter details, see the [doc/SonataSmooth_API_Documentation.xml](doc/SonataSmooth_API_Documentation.xml).
 
 ### 7. Example : Applying Smoothing in Code
 
@@ -165,7 +165,7 @@ double[] sgDerivative = SmoothingConductor.ApplySGDerivative(
 Get SonataSmooth.Tune from NuGet : [![NuGet](https://img.shields.io/nuget/v/SonataSmooth.Tune.svg)](https://www.nuget.org/packages/SonataSmooth.Tune)
 
 ## Further Reading
-- See the [doc/API_Documentation.xml](doc/API_Documentation.xml) for full API details.
+- See the [doc/SonataSmooth_API_Documentation.xml](doc/SonataSmooth_API_Documentation.xml) for full API details.
 - Explore `FrmMain.cs` and `FrmMain.Designer.cs` for practical usage patterns and UI integration.
 
 ---
