@@ -261,18 +261,34 @@ Partial Public Class FrmMain
             Dim alpha = GetSelectedAlpha()
             Dim sigmaFactor = GetSelectedSigmaFactor()
 
+            ' Prompt user for save path
+            Dim filePath As String = Nothing
+            Using sfd As New SaveFileDialog() With {
+            .Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*",
+            .Title = "Save Excel File",
+            .FileName = "SonataSmoothExport.xlsx"
+        }
+                If sfd.ShowDialog() = DialogResult.OK Then
+                    filePath = sfd.FileName
+                Else
+                    slblStatus.Text = "Excel export canceled"
+                    Return
+                End If
+            End Using
+
             Dim req = New ExcelScoreRequest() With {
-                .DatasetTitle = "SonataSmooth Test",
-                .InitialData = values,
-                .Radius = radius,
-                .PolyOrder = polyOrder,
-                .BoundaryMode = boundary,
-                .Flags = flags,
-                .DerivOrder = derivOrder,
-                .Alpha = alpha,
-                .OpenAfterExport = True,
-                .SigmaFactor = sigmaFactor
-            }
+            .DatasetTitle = "SonataSmooth Test",
+            .InitialData = values,
+            .Radius = radius,
+            .PolyOrder = polyOrder,
+            .BoundaryMode = boundary,
+            .Flags = flags,
+            .DerivOrder = derivOrder,
+            .Alpha = alpha,
+            .OpenAfterExport = False,
+            .SigmaFactor = sigmaFactor,
+            .SavePath = filePath
+        }
 
             If req.DerivOrder > 0 AndAlso Not req.Flags.SavitzkyGolay Then
                 req.Flags.SavitzkyGolay = True
