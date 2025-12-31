@@ -1,0 +1,14 @@
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\bin\Release\SonataSmoothCSSample.exe.config
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\bin\Release\SonataSmoothCSSample.exe
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\bin\Release\SonataSmoothCSSample.pdb
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\bin\Release\SonataSmooth.Tune.dll
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.csproj.AssemblyReference.cache
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.csproj.SuggestedBindingRedirects.cache
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.exe.config
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.Properties.Resources.resources
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.csproj.GenerateResource.cache
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.csproj.CoreCompileInputs.cache
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSm.352BB1A7.Up2Date
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.exe
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.pdb
+D:\SonataSmoothSamples\SonataSmoothCSSample\SonataSmoothCSSample\obj\Release\SonataSmoothCSSample.FrmMain.resources
