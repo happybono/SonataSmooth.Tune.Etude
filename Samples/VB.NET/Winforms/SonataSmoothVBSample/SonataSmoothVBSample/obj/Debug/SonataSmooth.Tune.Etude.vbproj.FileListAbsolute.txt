@@ -1,0 +1,16 @@
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\bin\Debug\SonataSmooth.Tune.Etude.exe.config
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\bin\Debug\SonataSmooth.Tune.Etude.exe
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\bin\Debug\SonataSmooth.Tune.Etude.pdb
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\bin\Debug\SonataSmooth.Tune.Etude.xml
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\bin\Debug\SonataSmooth.Tune.dll
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.vbproj.AssemblyReference.cache
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.vbproj.SuggestedBindingRedirects.cache
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.exe.config
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.FrmMain.resources
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.Resources.resources
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.vbproj.GenerateResource.cache
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.vbproj.CoreCompileInputs.cache
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSm.DED0BCE1.Up2Date
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.exe
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.xml
+D:\SonataSmoothSamples\SonataSmoothVBSample\SonataSmoothVBSample\obj\Debug\SonataSmooth.Tune.Etude.pdb
