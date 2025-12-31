@@ -1,0 +1,195 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly SonataSmooth.Tune, Version=5.1.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51: 
+	hash=None, flags=None
+Assembly Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c: 
+	hash=None, flags=None
+Assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Struct SonataSmooth.Tune.BoundaryMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SonataSmooth.Tune.BoundaryMode Symmetric = 0 : Public, Static, Literal, HasDefault
+    SonataSmooth.Tune.BoundaryMode Replicate = 1 : Public, Static, Literal, HasDefault
+    SonataSmooth.Tune.BoundaryMode ZeroPad = 2 : Public, Static, Literal, HasDefault
+    SonataSmooth.Tune.BoundaryMode Adaptive = 3 : Public, Static, Literal, HasDefault
+Class SonataSmooth.Tune.SmoothingConductor: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ApplySmoothing(Double[], Int32, Int32, BoundaryMode, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Double(Optional, HasDefault), Nullable`1(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ApplySGDerivative(Double[], Int32, Int32, Int32, Double, BoundaryMode): PrivateScope, Public, Static, HideBySig
+    GetValueWithBoundary(Double[], Int32, BoundaryMode): PrivateScope, Public, Static, HideBySig
+    CalcBinomialCoefficients(Int32): PrivateScope, Public, Static, HideBySig
+    ComputeGaussianCoefficients(Int32, Double): PrivateScope, Public, Static, HideBySig
+    ComputeSGCoefficients(Int32, Int32, Int32, Double): PrivateScope, Public, Static, HideBySig
+    ComputeSGCoefficients(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ValidateSmoothingParameters(Int32, Int32, Int32, Boolean, String&(Out)): PrivateScope, Public, Static, HideBySig
+    GetBoundaryMethodText(BoundaryMode): PrivateScope, Public, Static, HideBySig
+    ExportCsvAsyncFromResults(String, String, Int32, Int32, BoundaryMode, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Double[], Double[], Double[], Double[], Double[], Double[], Double[], Action`1(Optional, HasDefault), Action`1(Optional, HasDefault), Int32(Optional, HasDefault), Nullable`1(Optional, HasDefault), Double(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ExportCsvAsync(String, String, Int32, Int32, BoundaryMode, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Double[], Action`1(Optional, HasDefault), Action`1(Optional, HasDefault), Int32(Optional, HasDefault), Nullable`1(Optional, HasDefault), Double(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ExportExcelAsync(String, Int32, Int32, BoundaryMode, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Double[], Action`1(Optional, HasDefault), Action`1(Optional, HasDefault), Double(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class SonataSmooth.Tune.Export.CsvScoreRequest: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Title 'get set' : 
+    System.String BaseFilePath 'get set' : 
+    System.String SavePath 'get set' : 
+    Double[] InitialData 'get set' : 
+    Int32 Radius 'get set' : 
+    Int32 PolyOrder 'get set' : 
+    SonataSmooth.Tune.BoundaryMode BoundaryMode 'get set' : 
+    System.Nullable`1[System.Double] SigmaFactor 'get set' : 
+    Double Alpha 'get set' : 
+    SonataSmooth.Tune.Export.SmoothingNotation Flags 'get set' : 
+    Boolean OpenAfterExport 'get set' : 
+    Int32 DerivOrder 'get set' : 
+  Methods:
+    get_Title(): PrivateScope, Public, HideBySig, SpecialName
+    set_Title(String): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseFilePath(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseFilePath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SavePath(): PrivateScope, Public, HideBySig, SpecialName
+    set_SavePath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InitialData(): PrivateScope, Public, HideBySig, SpecialName
+    set_InitialData(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Radius(): PrivateScope, Public, HideBySig, SpecialName
+    set_Radius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PolyOrder(): PrivateScope, Public, HideBySig, SpecialName
+    set_PolyOrder(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BoundaryMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_BoundaryMode(BoundaryMode): PrivateScope, Public, HideBySig, SpecialName
+    get_SigmaFactor(): PrivateScope, Public, HideBySig, SpecialName
+    set_SigmaFactor(Nullable`1): PrivateScope, Public, HideBySig, SpecialName
+    get_Alpha(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alpha(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Flags(): PrivateScope, Public, HideBySig, SpecialName
+    set_Flags(SmoothingNotation): PrivateScope, Public, HideBySig, SpecialName
+    get_OpenAfterExport(): PrivateScope, Public, HideBySig, SpecialName
+    set_OpenAfterExport(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DerivOrder(): PrivateScope, Public, HideBySig, SpecialName
+    set_DerivOrder(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class SonataSmooth.Tune.Export.CsvExportResult: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.List`1[System.String] GeneratedFiles 'get ' : 
+  Methods:
+    get_GeneratedFiles(): PrivateScope, Public, HideBySig, SpecialName
+Class SonataSmooth.Tune.Export.CsvScoreWriter: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ExportAsync(CsvScoreRequest, IProgress`1(Optional, HasDefault), CancellationToken(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class SonataSmooth.Tune.Export.ExcelScoreRequest: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DatasetTitle 'get set' : 
+    Double[] InitialData 'get set' : 
+    Int32 Radius 'get set' : 
+    Int32 PolyOrder 'get set' : 
+    SonataSmooth.Tune.BoundaryMode BoundaryMode 'get set' : 
+    System.Nullable`1[System.Double] SigmaFactor 'get set' : 
+    Double Alpha 'get set' : 
+    SonataSmooth.Tune.Export.SmoothingNotation Flags 'get set' : 
+    Int32 DerivOrder 'get set' : 
+    Boolean OpenAfterExport 'get set' : 
+    System.String SavePath 'get set' : 
+    Boolean UseLocalLanguage 'get set' : 
+  Methods:
+    get_DatasetTitle(): PrivateScope, Public, HideBySig, SpecialName
+    set_DatasetTitle(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InitialData(): PrivateScope, Public, HideBySig, SpecialName
+    set_InitialData(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Radius(): PrivateScope, Public, HideBySig, SpecialName
+    set_Radius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PolyOrder(): PrivateScope, Public, HideBySig, SpecialName
+    set_PolyOrder(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BoundaryMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_BoundaryMode(BoundaryMode): PrivateScope, Public, HideBySig, SpecialName
+    get_SigmaFactor(): PrivateScope, Public, HideBySig, SpecialName
+    set_SigmaFactor(Nullable`1): PrivateScope, Public, HideBySig, SpecialName
+    get_Alpha(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alpha(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Flags(): PrivateScope, Public, HideBySig, SpecialName
+    set_Flags(SmoothingNotation): PrivateScope, Public, HideBySig, SpecialName
+    get_DerivOrder(): PrivateScope, Public, HideBySig, SpecialName
+    set_DerivOrder(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_OpenAfterExport(): PrivateScope, Public, HideBySig, SpecialName
+    set_OpenAfterExport(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SavePath(): PrivateScope, Public, HideBySig, SpecialName
+    set_SavePath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UseLocalLanguage(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseLocalLanguage(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Struct SonataSmooth.Tune.Export.ExcelInteropUnavailableReason: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SonataSmooth.Tune.Export.ExcelInteropUnavailableReason NotInstalled = 0 : Public, Static, Literal, HasDefault
+    SonataSmooth.Tune.Export.ExcelInteropUnavailableReason ClassNotRegistered = 1 : Public, Static, Literal, HasDefault
+    SonataSmooth.Tune.Export.ExcelInteropUnavailableReason ActivationFailed = 2 : Public, Static, Literal, HasDefault
+    SonataSmooth.Tune.Export.ExcelInteropUnavailableReason Unknown = 3 : Public, Static, Literal, HasDefault
+Class SonataSmooth.Tune.Export.ExcelInteropNotAvailableException: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.InvalidOperationException
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, SonataSmooth.Tune.Export.ExcelInteropUnavailableReason): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, SonataSmooth.Tune.Export.ExcelInteropUnavailableReason, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    SonataSmooth.Tune.Export.ExcelInteropUnavailableReason Reason 'get ' : 
+  Methods:
+    get_Reason(): PrivateScope, Public, HideBySig, SpecialName
+Class SonataSmooth.Tune.Export.ExcelScoreWriter: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ExportAsync(ExcelScoreRequest, IProgress`1(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class SonataSmooth.Tune.Export.ScoreConformanceChecker: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Validate(Int32, Int32, Int32, Boolean): PrivateScope, Public, Static, HideBySig
+Class SonataSmooth.Tune.Export.SmoothingNotation: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Rectangular 'get set' : 
+    Boolean BinomialAverage 'get set' : 
+    Boolean BinomialMedian 'get set' : 
+    Boolean Gaussian 'get set' : 
+    Boolean GaussianMedian 'get set' : 
+    Boolean SavitzkyGolay 'get set' : 
+    Boolean Any 'get ' : 
+  Methods:
+    get_Rectangular(): PrivateScope, Public, HideBySig, SpecialName
+    set_Rectangular(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_BinomialAverage(): PrivateScope, Public, HideBySig, SpecialName
+    set_BinomialAverage(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_BinomialMedian(): PrivateScope, Public, HideBySig, SpecialName
+    set_BinomialMedian(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Gaussian(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gaussian(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_GaussianMedian(): PrivateScope, Public, HideBySig, SpecialName
+    set_GaussianMedian(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SavitzkyGolay(): PrivateScope, Public, HideBySig, SpecialName
+    set_SavitzkyGolay(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Any(): PrivateScope, Public, HideBySig, SpecialName
+Class SonataSmooth.Tune.Export.SmoothingScore: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double[] Initial 'get set' : 
+    Double[] Rect 'get set' : 
+    Double[] BinomAvg 'get set' : 
+    Double[] BinomMed 'get set' : 
+    Double[] Gauss 'get set' : 
+    Double[] GaussMed 'get set' : 
+    Double[] SavitzkyGolay 'get set' : 
+    Int32 Length 'get ' : 
+  Methods:
+    get_Initial(): PrivateScope, Public, HideBySig, SpecialName
+    set_Initial(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Rect(): PrivateScope, Public, HideBySig, SpecialName
+    set_Rect(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_BinomAvg(): PrivateScope, Public, HideBySig, SpecialName
+    set_BinomAvg(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_BinomMed(): PrivateScope, Public, HideBySig, SpecialName
+    set_BinomMed(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Gauss(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gauss(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_GaussMed(): PrivateScope, Public, HideBySig, SpecialName
+    set_GaussMed(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_SavitzkyGolay(): PrivateScope, Public, HideBySig, SpecialName
+    set_SavitzkyGolay(Double[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
