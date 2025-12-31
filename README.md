@@ -8,6 +8,15 @@ A C# / .NET library for advanced smoothing and signal processing (SonataSmooth.T
 
 **SonataSmooth.Tune.Etude** is the companion sample application : an "Etude" in the artistic sense. In music and art, an Etude is a study or exercise, often created to explore techniques or prepare for a final masterpiece. This sample application is crafted as a practical, hands-on study : a place to experiment, learn, and understand the capabilities of the SonataSmooth.Tune library before building your own full-scale applications. Think of it as a sketch or clay model - an essential step toward your own data processing "masterpiece."
 
+<br>
+<div align="center">
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/SonataSmooth.Tune.Etude"> 
+<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/happybono/SonataSmooth.Tune.Etude">
+<img alt="GitHub Repo Languages" src="https://img.shields.io/github/languages/count/happybono/SonataSmooth.Tune.Etude">
+<img alt="GitHub Top Languages" src="https://img.shields.io/github/languages/top/happybono/SonataSmooth.Tune.Etude">
+<img alt="Nuget Downloads" src="https://img.shields.io/nuget/dt/SonataSmooth.Tune?logo=NuGet&link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FSonataSmooth.Tune">
+</div><br>
+
 ## What's New
 ### v1.0.0.0
 #### January 01, 2026
