@@ -1,0 +1,16 @@
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\bin\x64\Debug\SonataSmooth.Tune.Etude.exe.config
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\bin\x64\Debug\SonataSmooth.Tune.Etude.exe
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\bin\x64\Debug\SonataSmooth.Tune.Etude.pdb
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\bin\x64\Debug\SonataSmooth.Tune.Etude.xml
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\bin\x64\Debug\SonataSmooth.Tune.dll
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.vbproj.AssemblyReference.cache
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.vbproj.SuggestedBindingRedirects.cache
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.exe.config
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.FrmMain.resources
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.Resources.resources
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.vbproj.GenerateResource.cache
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.vbproj.CoreCompileInputs.cache
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSm.DED0BCE1.Up2Date
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.exe
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.xml
+D:\SonataSmoothSamples\Samples\VB.NET\Winforms\SonataSmoothVBSample\SonataSmoothVBSample\obj\x64\Debug\SonataSmooth.Tune.Etude.pdb
