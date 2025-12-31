@@ -1,0 +1,16 @@
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\SonataSmooth.Tune.Etude.exe.config
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\SonataSmooth.Tune.Etude.exe
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\SonataSmooth.Tune.dll
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\Microsoft.Office.Interop.Excel.dll
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\office.dll
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\Microsoft.Vbe.Interop.dll
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\stdole.dll
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\Microsoft.Office.Interop.Excel.xml
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\bin\x64\Release\office.xml
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSmooth.Tune.Etude.csproj.AssemblyReference.cache
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSmooth.Tune.Etude.FrmMain.resources
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSmooth.Tune.Etude.Properties.Resources.resources
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSmooth.Tune.Etude.csproj.GenerateResource.cache
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSmooth.Tune.Etude.csproj.CoreCompileInputs.cache
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSm.E0C1BE96.Up2Date
+D:\SonataSmoothSamples\Samples\C#\Winforms\SonataSmoothCSSample\SonataSmoothCSSample\obj\x64\Release\SonataSmooth.Tune.Etude.exe
