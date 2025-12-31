@@ -312,10 +312,8 @@ namespace SonataSmooth.Tune.Etude
                 int radius = (int)updRadius.Value;
                 int polyOrder = (int)updPolyOrder.Value;
                 var boundary = ParseBoundaryMode(cbxBoundaryMode.SelectedItem as string);
-                double alpha = GetSelectedAlpha();
                 int derivOrder = GetSelectedDerivativeOrder();
                 if (derivOrder < 0) derivOrder = 0;
-                double? sigmaFactor = GetSelectedSigmaFactor();
 
                 if (derivOrder > 0 && !doSG)
                     doSG = true;
@@ -341,6 +339,27 @@ namespace SonataSmooth.Tune.Etude
                     SavitzkyGolay = doSG
                 };
 
+                double alpha = GetSelectedAlpha();
+                double? sigmaFactor = GetSelectedSigmaFactor();
+
+                // Prompt user for save path
+                string filePath = null;
+                using (var sfd = new SaveFileDialog
+                {
+                    Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*",
+                    Title = "Save Excel File",
+                    FileName = "SonataSmoothExport.xlsx"
+                })
+                {
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                        filePath = sfd.FileName;
+                    else
+                    {
+                        slblStatus.Text = "Excel export canceled";
+                        return;
+                    }
+                }
+
                 var req = new ExcelScoreRequest
                 {
                     DatasetTitle = "SonataSmooth Test",
@@ -352,7 +371,8 @@ namespace SonataSmooth.Tune.Etude
                     DerivOrder = derivOrder,
                     Alpha = alpha,
                     OpenAfterExport = false,
-                    SigmaFactor = sigmaFactor
+                    SigmaFactor = sigmaFactor,
+                    SavePath = filePath
                 };
 
                 if (req.DerivOrder > 0 && !req.Flags.SavitzkyGolay)
