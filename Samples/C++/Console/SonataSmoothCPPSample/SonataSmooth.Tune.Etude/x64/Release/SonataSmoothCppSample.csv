@@ -1,0 +1,37 @@
+﻿SonataSmooth C++ Sample
+Part 1 of 1
+
+Smoothing Parameters
+Kernel Radius : 5
+Kernel Width : 11
+Boundary Method : Adaptive
+Alpha Blend : 0.7
+Gaussian Sigma : 11 ÷ 6 = 1.833
+
+Generated : 12/31/2025 11:55:29 PM
+
+Initial Dataset,Binomial Median Filtering,Gaussian Weighted Median Filtering
+3,4.4,4.4
+5,5,5
+7,5.6,5.6
+5,5,5
+4,4.7,4.7
+9,6.9,6.2
+100,34.2,33.5
+4,4,4.7
+3,3.7,4.4
+6,5.3,5.3
+5,5,5
+3,4.4,4.4
+8,5.9,5.9
+5,5,5
+3,4.4,4.4
+5,5,5
+4,4,4
+7,4.9,4.9
+3,3.7,3.7
+4,4,4
+3,3.7,3.7
+5,4.3,4.3
+3,3.35,3
+5,3.95,3.6
