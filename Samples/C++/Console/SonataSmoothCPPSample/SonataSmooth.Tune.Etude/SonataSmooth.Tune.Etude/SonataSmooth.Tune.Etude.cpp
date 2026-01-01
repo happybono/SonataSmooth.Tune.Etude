@@ -63,6 +63,23 @@ static void ReportProgress(int p)
     System::Console::WriteLine("Progress: {0}%", p);
 }
 
+static String^ ReadExportFileName(String^ prompt, String^ defaultName, String^ requiredExtension)
+{
+    Console::Write("{0} (default: {1}): ", prompt, defaultName);
+    String^ name = Console::ReadLine();
+
+    if (String::IsNullOrWhiteSpace(name))
+        name = defaultName;
+
+    String^ ext = Path::GetExtension(name);
+    if (String::IsNullOrWhiteSpace(ext))
+        name = name + requiredExtension;
+    else if (!String::Equals(ext, requiredExtension, StringComparison::OrdinalIgnoreCase))
+        name = Path::ChangeExtension(name, requiredExtension);
+
+    return name;
+}
+
 void Etude::Run()
 {
     // Enter common parameters
@@ -80,7 +97,7 @@ void Etude::Run()
         Console::WriteLine(warn);
 
     // Input selection for Smoothing Method (filter)
-    Console::WriteLine("Select smoothing methods to apply (Y/N, default N):");
+    Console::WriteLine("Select smoothing methods to apply (Y / N, default N):");
     Console::Write("Rectangular? (Y / N): ");
     bool doRect = String::Equals(Console::ReadLine(), "Y", StringComparison::OrdinalIgnoreCase);
     Console::Write("Binomial Average? (Y / N): ");
@@ -107,7 +124,7 @@ void Etude::Run()
     int radius = 4;
     int parsedRadius = 0;
     if (!String::IsNullOrWhiteSpace(radiusStr) && Int32::TryParse(radiusStr, parsedRadius))
-        radius = parsedRadius; 
+        radius = parsedRadius;
 
     Console::Write("Polynomial order (int, default 2): ");
     String^ polyOrderStr = Console::ReadLine();
@@ -133,7 +150,6 @@ void Etude::Run()
         int parsedDeriv = 0;
         if (!String::IsNullOrWhiteSpace(derivOrderStr) && Int32::TryParse(derivOrderStr, parsedDeriv))
             derivOrder = parsedDeriv;
-        // Else keep derivOrder as 0
     }
 
     double alpha = 1.0;
@@ -160,7 +176,6 @@ void Etude::Run()
         double parsedSigma = 0.0;
         if (!String::IsNullOrWhiteSpace(sigmaStr) && Double::TryParse(sigmaStr, parsedSigma))
             sigmaFactor = parsedSigma;
-        // Else keep sigmaFactor as 6.0
     }
 
     // Select export method
@@ -169,161 +184,165 @@ void Etude::Run()
     Console::Write("Export to Excel? (Y / N, default N): ");
     bool exportExcel = String::Equals(Console::ReadLine(), "Y", StringComparison::OrdinalIgnoreCase);
 
-// Progress handler for displaying progress
-auto progress = gcnew Progress<int>(gcnew Action<int>(&ReportProgress));
+    // Progress handler for displaying progress
+    auto progress = gcnew Progress<int>(gcnew Action<int>(&ReportProgress));
 
-
-// CSV Export
-if (exportCsv)
-{
-    CsvScoreRequest^ req = gcnew CsvScoreRequest();
-    req->Title = "SonataSmooth C++ Sample";
-    req->InitialData = values;
-    req->Radius = radius;
-    req->PolyOrder = polyOrder;
-    req->BoundaryMode = boundary;
-    req->Flags = flags;
-    req->DerivOrder = derivOrder;
-    req->Alpha = alpha;
-    req->SigmaFactor = System::Nullable<double>(sigmaFactor);
-    req->BaseFilePath = "SonataSmoothCppSample";
-    // Save to the executable file location
     String^ exePath = System::Reflection::Assembly::GetEntryAssembly()->Location;
     String^ exeDir = System::IO::Path::GetDirectoryName(exePath);
-    String^ csvPath = System::IO::Path::Combine(exeDir, "SonataSmoothCppSample.csv");
-    req->SavePath = csvPath;
 
-	req->OpenAfterExport = false;
-
-    try
+    String^ csvSavePath = nullptr;
+    if (exportCsv)
     {
-        auto task = CsvScoreWriter::ExportAsync(req, progress, System::Threading::CancellationToken::None);
-        task->Wait();
-        Console::WriteLine("CSV export complete: {0}", req->SavePath);
+        String^ csvFileName = ReadExportFileName("Base CSV file name", "SonataSmoothCppSample.csv", ".csv");
+        csvSavePath = Path::Combine(exeDir, csvFileName);
     }
-    catch (AggregateException^ ex)
+
+    String^ excelSavePath = nullptr;
+    if (exportExcel)
     {
-        for each (Exception ^ e in ex->InnerExceptions)
+        String^ excelFileName = ReadExportFileName("Base Excel file name", "SonataSmoothCppSample.xlsx", ".xlsx");
+        excelSavePath = Path::Combine(exeDir, excelFileName);
+    }
+
+    // CSV Export
+    if (exportCsv)
+    {
+        CsvScoreRequest^ req = gcnew CsvScoreRequest();
+        req->Title = "SonataSmooth C++ Sample";
+        req->InitialData = values;
+        req->Radius = radius;
+        req->PolyOrder = polyOrder;
+        req->BoundaryMode = boundary;
+        req->Flags = flags;
+        req->DerivOrder = derivOrder;
+        req->Alpha = alpha;
+        req->SigmaFactor = System::Nullable<double>(sigmaFactor);
+        req->BaseFilePath = "SonataSmoothCppSample";
+        req->SavePath = csvSavePath;
+        req->OpenAfterExport = false;
+
+        try
         {
-            if (dynamic_cast<ArgumentNullException^>(e) != nullptr)
-                Console::WriteLine("CSV Error: Null argument - {0}", e->Message);
-            else if (dynamic_cast<InvalidOperationException^>(e) != nullptr)
-                Console::WriteLine("CSV Error: Invalid operation - {0}", e->Message);
-            else if (dynamic_cast<OperationCanceledException^>(e) != nullptr)
-                Console::WriteLine("CSV Export canceled.");
-            else
-                Console::WriteLine("CSV Error: {0}", e->Message);
+            auto task = CsvScoreWriter::ExportAsync(req, progress, System::Threading::CancellationToken::None);
+            task->Wait();
+            Console::WriteLine("CSV export complete: {0}", req->SavePath);
+        }
+        catch (AggregateException^ ex)
+        {
+            for each (Exception ^ e in ex->InnerExceptions)
+            {
+                if (dynamic_cast<ArgumentNullException^>(e) != nullptr)
+                    Console::WriteLine("CSV Error: Null argument - {0}", e->Message);
+                else if (dynamic_cast<InvalidOperationException^>(e) != nullptr)
+                    Console::WriteLine("CSV Error: Invalid operation - {0}", e->Message);
+                else if (dynamic_cast<OperationCanceledException^>(e) != nullptr)
+                    Console::WriteLine("CSV Export canceled.");
+                else
+                    Console::WriteLine("CSV Error: {0}", e->Message);
+            }
         }
     }
-}
 
-// Example of directly calling ApplySmoothing (output results)
-try
-{
-    // Validate parameters (based on API documentation)
-    int windowSize = 2 * radius + 1;
-    if (radius < 1)
-        Console::WriteLine("Warning: Smoothing radius should be >= 1 for effective smoothing.");
-    if (doSG && (polyOrder < 0 || polyOrder >= windowSize))
-        Console::WriteLine("Warning: For Savitzky-Golay, 0 <= polyOrder < (2 * radius + 1) must be satisfied.");
-
-    // Actual smoothing call
-    auto smoothingResults = SmoothingConductor::ApplySmoothing(
-        values,                               // array<double>^ input
-        radius,                               // int r
-        polyOrder,                            // int polyOrder
-        boundary,                             // BoundaryMode
-        flags->Rectangular,                   // bool doRect
-        flags->BinomialAverage,               // bool doAvg
-        flags->BinomialMedian,                // bool doMed
-        flags->GaussianMedian,                // bool doGaussMed
-        flags->Gaussian,                      // bool doGauss
-        flags->SavitzkyGolay,                 // bool doSG
-        alpha,                                // double alpha
-        System::Nullable<double>(sigmaFactor) // wrap in Nullable
-    );
-
-    auto original = values;
-    auto rect = smoothingResults.Item1;
-    auto binomAvg = smoothingResults.Item2;
-    auto binomMed = smoothingResults.Item3;
-    auto gaussMed = smoothingResults.Item4;
-    auto gauss = smoothingResults.Item5;
-    auto sg = smoothingResults.Item6;
-
-    if (flags->Rectangular)
-        PrintIfSmoothed("Rectangular Smoothing", rect, original);
-    if (flags->BinomialAverage)
-        PrintIfSmoothed("Binomial Average Smoothing", binomAvg, original);
-    if (flags->BinomialMedian)
-        PrintIfSmoothed("Binomial Median Smoothing", binomMed, original);
-    if (flags->GaussianMedian)
-        PrintIfSmoothed("Gaussian Median Smoothing", gaussMed, original);
-    if (flags->Gaussian)
-        PrintIfSmoothed("Gaussian Smoothing", gauss, original);
-    if (flags->SavitzkyGolay)
-        PrintIfSmoothed("Savitzky-Golay Smoothing", sg, original);
-}
-catch (ArgumentNullException^ e)
-{
-    Console::WriteLine("Smoothing Error: Null argument - {0}", e->Message);
-}
-catch (ArgumentOutOfRangeException^ e)
-{
-    Console::WriteLine("Smoothing Error: Out of range - {0}", e->Message);
-}
-catch (Exception^ e)
-{
-    Console::WriteLine("Smoothing Error: {0}", e->Message);
-}
-
-
-// Excel Export
-if (exportExcel)
-{
-    ExcelScoreRequest^ excelReq = gcnew ExcelScoreRequest();
-    excelReq->DatasetTitle = "SonataSmooth C++ Sample";
-    excelReq->InitialData = values;
-    excelReq->Radius = radius;
-    excelReq->PolyOrder = polyOrder;
-    excelReq->BoundaryMode = boundary;
-    excelReq->Flags = flags;
-    excelReq->DerivOrder = derivOrder;
-    excelReq->Alpha = alpha;
-    excelReq->SigmaFactor = System::Nullable<double>(sigmaFactor);
-
-    // Save to the executable file location
-    String^ exePath = System::Reflection::Assembly::GetEntryAssembly()->Location;
-    String^ exeDir = System::IO::Path::GetDirectoryName(exePath);
-    String^ excelPath = System::IO::Path::Combine(exeDir, "SonataSmoothCppSample.xlsx");
-    excelReq->SavePath = excelPath;
-
-    excelReq->OpenAfterExport = false;
-
+    // Example of directly calling ApplySmoothing (output results)
     try
     {
-        auto excelTask = ExcelScoreWriter::ExportAsync(excelReq, progress);
-        excelTask->Wait();
-        Console::WriteLine("Excel export complete: {0}", excelReq->SavePath);
+        // Validate parameters (based on API documentation)
+        int windowSize = 2 * radius + 1;
+        if (radius < 1)
+            Console::WriteLine("Warning: Smoothing radius should be >= 1 for effective smoothing.");
+        if (doSG && (polyOrder < 0 || polyOrder >= windowSize))
+            Console::WriteLine("Warning: For Savitzky-Golay, 0 <= polyOrder < (2 * radius + 1) must be satisfied.");
+
+        // Actual smoothing call
+        auto smoothingResults = SmoothingConductor::ApplySmoothing(
+            values,                               // array<double>^ input
+            radius,                               // int r
+            polyOrder,                            // int polyOrder
+            boundary,                             // BoundaryMode
+            flags->Rectangular,                   // bool doRect
+            flags->BinomialAverage,               // bool doAvg
+            flags->BinomialMedian,                // bool doMed
+            flags->GaussianMedian,                // bool doGaussMed
+            flags->Gaussian,                      // bool doGauss
+            flags->SavitzkyGolay,                 // bool doSG
+            alpha,                                // double alpha
+            System::Nullable<double>(sigmaFactor) // wrap in Nullable
+        );
+
+        auto original = values;
+        auto rect = smoothingResults.Item1;
+        auto binomAvg = smoothingResults.Item2;
+        auto binomMed = smoothingResults.Item3;
+        auto gaussMed = smoothingResults.Item4;
+        auto gauss = smoothingResults.Item5;
+        auto sg = smoothingResults.Item6;
+
+        if (flags->Rectangular)
+            PrintIfSmoothed("Rectangular Smoothing", rect, original);
+        if (flags->BinomialAverage)
+            PrintIfSmoothed("Binomial Average Smoothing", binomAvg, original);
+        if (flags->BinomialMedian)
+            PrintIfSmoothed("Binomial Median Smoothing", binomMed, original);
+        if (flags->GaussianMedian)
+            PrintIfSmoothed("Gaussian Median Smoothing", gaussMed, original);
+        if (flags->Gaussian)
+            PrintIfSmoothed("Gaussian Smoothing", gauss, original);
+        if (flags->SavitzkyGolay)
+            PrintIfSmoothed("Savitzky-Golay Smoothing", sg, original);
     }
-    catch (AggregateException^ ex)
+    catch (ArgumentNullException^ e)
     {
-        for each (Exception ^ e in ex->InnerExceptions)
+        Console::WriteLine("Smoothing Error: Null argument - {0}", e->Message);
+    }
+    catch (ArgumentOutOfRangeException^ e)
+    {
+        Console::WriteLine("Smoothing Error: Out of range - {0}", e->Message);
+    }
+    catch (Exception^ e)
+    {
+        Console::WriteLine("Smoothing Error: {0}", e->Message);
+    }
+
+    // Excel Export
+    if (exportExcel)
+    {
+        ExcelScoreRequest^ excelReq = gcnew ExcelScoreRequest();
+        excelReq->DatasetTitle = "SonataSmooth C++ Sample";
+        excelReq->InitialData = values;
+        excelReq->Radius = radius;
+        excelReq->PolyOrder = polyOrder;
+        excelReq->BoundaryMode = boundary;
+        excelReq->Flags = flags;
+        excelReq->DerivOrder = derivOrder;
+        excelReq->Alpha = alpha;
+        excelReq->SigmaFactor = System::Nullable<double>(sigmaFactor);
+        excelReq->SavePath = excelSavePath;
+        excelReq->OpenAfterExport = false;
+
+        try
         {
-            if (dynamic_cast<ArgumentNullException^>(e) != nullptr)
-                Console::WriteLine("Excel Error: Null argument - {0}", e->Message);
-            else if (dynamic_cast<InvalidOperationException^>(e) != nullptr)
-                Console::WriteLine("Excel Error: Invalid operation - {0}", e->Message);
-            else if (dynamic_cast<OperationCanceledException^>(e) != nullptr)
-                Console::WriteLine("Excel Export canceled.");
-            else if (e->GetType()->FullName->Contains("ExcelInteropNotAvailableException"))
-                Console::WriteLine("Excel Error: Excel interop not available - {0}", e->Message);
-            else
-                Console::WriteLine("Excel Error: {0}", e->Message);
+            auto excelTask = ExcelScoreWriter::ExportAsync(excelReq, progress);
+            excelTask->Wait();
+            Console::WriteLine("Excel export complete: {0}", excelReq->SavePath);
+        }
+        catch (AggregateException^ ex)
+        {
+            for each (Exception ^ e in ex->InnerExceptions)
+            {
+                if (dynamic_cast<ArgumentNullException^>(e) != nullptr)
+                    Console::WriteLine("Excel Error: Null argument - {0}", e->Message);
+                else if (dynamic_cast<InvalidOperationException^>(e) != nullptr)
+                    Console::WriteLine("Excel Error: Invalid operation - {0}", e->Message);
+                else if (dynamic_cast<OperationCanceledException^>(e) != nullptr)
+                    Console::WriteLine("Excel Export canceled.");
+                else if (e->GetType()->FullName->Contains("ExcelInteropNotAvailableException"))
+                    Console::WriteLine("Excel Error: Excel interop not available - {0}", e->Message);
+                else
+                    Console::WriteLine("Excel Error: {0}", e->Message);
+            }
         }
     }
-}
 
-Console::WriteLine("Press Enter to exit.");
-Console::ReadLine();
+    Console::WriteLine("Press Enter to exit.");
+    Console::ReadLine();
 }
