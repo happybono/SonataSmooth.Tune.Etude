@@ -1,118 +1,113 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  main.cpp
-  SonataSmooth.Tune.Etude.cpp
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(97,55): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+﻿  SonataSmooth.Tune.Etude.cpp
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(114,55): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(97,55):
+      E:\My Lifestyle\Products\C(114,55):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::SmoothingNotation' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(179,49): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(210,53): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(179,49):
+      E:\My Lifestyle\Products\C(210,53):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::CsvScoreRequest' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(179,49): warning C4691: 'System::Nullable': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(210,53): warning C4691: 'System::Nullable': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(179,49):
+      E:\My Lifestyle\Products\C(210,53):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::CsvScoreRequest' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(226,52): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48):
+      E:\My Lifestyle\Products\C(226,52):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::CsvScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48): warning C4691: 'System::Threading::Tasks::Task': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(226,52): warning C4691: 'System::Threading::Tasks::Task': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48):
+      E:\My Lifestyle\Products\C(226,52):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::CsvScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48): warning C4691: 'System::IProgress': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(226,52): warning C4691: 'System::IProgress': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48):
+      E:\My Lifestyle\Products\C(226,52):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::CsvScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48): warning C4691: 'System::Threading::CancellationToken': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(226,52): warning C4691: 'System::Threading::CancellationToken': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(200,48):
+      E:\My Lifestyle\Products\C(226,52):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::CsvScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::ValueTuple': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::ValueTuple': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Nullable': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Nullable': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Threading::Tasks::Task': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Threading::Tasks::Task': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Action': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Action': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Collections::Generic::List': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Collections::Generic::List': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Collections::Generic::Stack': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Collections::Generic::Stack': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Collections::Generic::Dictionary': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Collections::Generic::Dictionary': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63): warning C4691: 'System::Tuple': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(257,67): warning C4691: 'System::Tuple': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(231,63):
+      E:\My Lifestyle\Products\C(257,67):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::SmoothingConductor' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(284,58): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(309,62): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(284,58):
+      E:\My Lifestyle\Products\C(309,62):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::ExcelScoreRequest' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(284,58): warning C4691: 'System::Nullable': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(309,62): warning C4691: 'System::Nullable': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(284,58):
+      E:\My Lifestyle\Products\C(309,62):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::ExcelScoreRequest' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(324,59): warning C4691: 'System::Object': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55):
+      E:\My Lifestyle\Products\C(324,59):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::ExcelScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55): warning C4691: 'System::Exception': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(324,59): warning C4691: 'System::Exception': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55):
+      E:\My Lifestyle\Products\C(324,59):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::ExcelScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55): warning C4691: 'System::Threading::Tasks::Task': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(324,59): warning C4691: 'System::Threading::Tasks::Task': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55):
+      E:\My Lifestyle\Products\C(324,59):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::ExcelScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55): warning C4691: 'System::IProgress': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
+E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(324,59): warning C4691: 'System::IProgress': type referenced was expected in unreferenced assembly 'netstandard', type defined in current translation unit used instead
   (compiling source file '/SonataSmooth.Tune.Etude.cpp')
-      C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude\SonataSmooth.Tune.Etude.cpp(305,55):
+      E:\My Lifestyle\Products\C(324,59):
       This diagnostic occurred while importing type 'SonataSmooth::Tune::Export::ExcelScoreWriter' from assembly 'SonataSmooth.Tune, Version=5.1.4.0, Culture=neutral, PublicKeyToken=null'.
   
-  Generating Code...
-  .NETFramework,Version=v4.8.1.AssemblyAttributes.cpp
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  SonataSmooth.Tune.Etude.vcxproj -> C:\Users\HappyBono\source\repos\SonataSmooth.Tune.Etude\Release\SonataSmooth.Tune.Etude.exe
+  SonataSmooth.Tune.Etude.vcxproj -> E:\My Lifestyle\Products\C#\SonataSmoothSamples\Samples\C++\Console\SonataSmoothCPPSample\SonataSmooth.Tune.Etude\Release\SonataSmooth.Tune.Etude.exe
