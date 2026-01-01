@@ -1,0 +1,6 @@
+Samples/**/*.cs linguist-detectable=true
+Samples/**/*.cpp linguist-detectable=true
+Samples/**/*.vb linguist-detectable=true
+
+Samples/**/*Designer.cs linguist-detectable=true
+Samples/**/*Designer.vb linguist-detectable=true
