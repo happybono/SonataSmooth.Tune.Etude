@@ -186,4 +186,4 @@ Get SonataSmooth.Tune from NuGet : [![NuGet](https://img.shields.io/nuget/v/Sona
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Copyright 
-Copyright ⓒ HappyBono 2022 - 2026. All Rights Reserved.
+Copyright ⓒ HappyBono 2026. All Rights Reserved.
