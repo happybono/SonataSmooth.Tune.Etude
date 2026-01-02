@@ -161,7 +161,7 @@ public static (
   - If `sigmaFactor` is not set, sigma = windowSize / 6.0 (legacy).
   - If `sigmaFactor` is set, sigma = windowSize / sigmaFactor (user-controlled).
 
-**Usage Example**:
+**Usage Example** :
 ```csharp
 // Custom sigmaFactor example
 var (rect, binom, med, gaussMed, gauss, sg) = SmoothingConductor.ApplySmoothing(
@@ -193,16 +193,16 @@ Corresponding arrays remain zeroed (for alignment). No lazy null omission.
   - `ComputeSGCoefficients` : `ArgumentOutOfRangeException`, `ArgumentException` (even window, order ≥ window), `InvalidOperationException` (singular / near-zero sum). 
 
 **Filter flags (summary)**
-- doRect: Rectangular mean (uniform). No alpha blending.
-- doAvg: Binomial (Pascal) weighted average. Alpha applied.
-- doMed: Binomial weighted median (robust). Alpha applied.
-- doGaussMed: Gaussian weighted median (robust with Gaussian emphasis; local kernel in Adaptive). Alpha applied.
-- doGauss: Gaussian mean (convolution). Alpha applied.
-- doSG: Savitzky–Golay smoothing (and derivatives via dedicated API). No alpha blending.  
+- doRect : Rectangular mean (uniform). No alpha blending.
+- doAvg : Binomial (Pascal) weighted average. Alpha applied.
+- doMed : Binomial weighted median (robust). Alpha applied.
+- doGaussMed : Gaussian weighted median (robust with Gaussian emphasis; local kernel in Adaptive). Alpha applied.
+- doGauss : Gaussian mean (convolution). Alpha applied.
+- doSG : Savitzky–Golay smoothing (and derivatives via dedicated API). No alpha blending.  
 
-Notes:
+**Notes** :
 - Adaptive boundary mode slides the window fully in-range for all filters; for doGaussMed a local Gaussian kernel is recomputed per position.
-- Sigma heuristic: σ ≈ W / 6 (W = 2r + 1).
+- Sigma heuristic : σ ≈ W / 6 (W = 2r + 1).
 
 ### 3.3 Method : `GetValueWithBoundary`
 ```csharp
@@ -658,9 +658,9 @@ Behavior similar conceptually to `ExportExcelAsync`, but at the high-level write
 
 >**Behavior** :
 - Applies smoothing and writes series/headers; builds chart; sets document properties.
-- Chart axis titles: category (X) = "Sequence Number", value (Y) = "Value".
+- Chart axis titles : category (X) = "Sequence Number", value (Y) = "Value".
 - Boundary labels use abbreviated forms ("Symmetric", "Replicate", "ZeroPad", "Adaptive").
-- Alpha header row:
+- Alpha header row :
   - Always present.
   - "Alpha Blend : {Alpha}" when any of Binomial Average, Binomial Median, Gaussian Weighted Median, or Gaussian are enabled.
   - "Alpha Blend : N/A" when none of the affected filters are enabled.
@@ -771,16 +771,16 @@ Parallel threshold : `n >= 2000` triggers `Parallel.For` (default scheduler). We
 ### 11.1 Multi-Filter Smoothing
 ```csharp
 var (rect, binom, med, gaussMed, gauss, sg) = SmoothingConductor.ApplySmoothing(
-    input : samples,
-    r : 4,
-    polyOrder : 3,
-    boundaryMode : BoundaryMode.Symmetric,
-    doRect : true,
-    doAvg : true,
-    doMed : true,
-    doGaussMed : true,
-    doGauss : true,
-    doSG : true
+    input: samples,
+    r: 4,
+    polyOrder: 3,
+    boundaryMode: BoundaryMode.Symmetric,
+    doRect: true,
+    doAvg: true,
+    doMed: true,
+    doGaussMed: true,
+    doGauss: true,
+    doSG: true
 );
 ```
 
@@ -826,7 +826,7 @@ var csvRequest = new CsvScoreRequest
 
 var result = await CsvScoreWriter.ExportAsync(
     csvRequest,
-    progress : new Progress<int>(p => Console.WriteLine($"CSV {p}%"))
+    progress: new Progress<int>(p => Console.WriteLine($"CSV {p}%"))
 );
 ```
 
@@ -888,8 +888,8 @@ var excelRequest = new ExcelScoreRequest
         Gaussian = true,
         SavitzkyGolay = true
     },
-    Alpha = 0.85,       // optional: applies to Binomial Avg / Med, Gaussian Weighted Median, Gaussian
-    SigmaFactor = 12.0, // optional: custom sigma scaling
+    Alpha = 0.85,       // optional : applies to Binomial Avg / Med, Gaussian Weighted Median, Gaussian
+    SigmaFactor = 12.0, // optional : custom sigma scaling
     DerivOrder = 0      // 0 = smoothing; >0 = derivative when SG enabled
 };
 ```
@@ -950,7 +950,7 @@ var excelRequest = new ExcelScoreRequest
 | ExcelScoreWriter.ExportAsync (dynamic) | ExcelInteropNotAvailableException, InvalidOperationException |
 | ExportExcelAsync (SmoothingConductor) | Errors reported via callback, COM released |
 
-- `ApplySmoothing`: `ArgumentOutOfRangeException` on `alpha` out of range.
+- `ApplySmoothing` : `ArgumentOutOfRangeException` on `alpha` out of range.
 
 ---
 
@@ -976,12 +976,12 @@ public static double[] ApplySGDerivative(
 Example :
 ```csharp
 var d1 = SmoothingConductor.ApplySGDerivative(
-    input : samples,
+    input: samples,
     r: 4,
     polyOrder: 3,
     derivativeOrder: 1,
     delta: 1.0,
-    boundaryMode : BoundaryMode.Symmetric
+    boundaryMode: BoundaryMode.Symmetric
 );
 ```
 

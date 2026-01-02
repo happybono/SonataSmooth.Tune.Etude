@@ -72,7 +72,7 @@
             <summary>
             Optional. Controls the denominator in the Gaussian sigma calculation: sigma = windowSize / sigmaFactor.
             If null (default), legacy behavior is used (sigmaFactor = 6.0). If set, allows custom control of Gaussian smoothing width.
-            Applies to both standard and adaptive Gaussian/weighted-median filters.
+            Applies to both standard and adaptive Gaussian / weighted-median filters.
             </summary>
         </member>
         <member name="P:SonataSmooth.Tune.Export.CsvScoreRequest.Alpha">
