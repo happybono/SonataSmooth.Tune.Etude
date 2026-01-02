@@ -178,5 +178,12 @@ Get SonataSmooth.Tune from NuGet : [![NuGet](https://img.shields.io/nuget/v/Sona
 - Explore `FrmMain.cs` and `FrmMain.Designer.cs` for practical usage patterns and UI integration.
 
 ---
+
 **SonataSmooth.Tune** : Tune your data.  
 **SonataSmooth.Tune.Etude** : Study, experiment, and prepare for your own data processing masterpiece.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Copyright 
+Copyright ⓒ HappyBono 2022 - 2026. All Rights Reserved.
