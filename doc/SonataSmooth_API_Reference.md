@@ -890,7 +890,7 @@ var excelRequest = new ExcelScoreRequest
     },
     Alpha = 0.85,       // optional : applies to Binomial Avg / Med, Gaussian Weighted Median, Gaussian
     SigmaFactor = 12.0, // optional : custom sigma scaling
-    DerivOrder = 0      // 0 = smoothing; >0 = derivative when SG enabled
+    DerivOrder = 0      // 0 = smoothing; > 0 = derivative when SG enabled
 };
 ```
 
