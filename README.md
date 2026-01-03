@@ -1,12 +1,12 @@
 # SonataSmooth.Tune.Etude
-A C# / .NET library for advanced smoothing and signal processing ([**SonataSmooth.Tune**](https://www.nuget.org/packages/SonataSmooth.Tune)), with a hands-on study application (SonataSmooth.Tune.Etude) that lets you experiment, learn, and prepare for your own data processing masterpieces : just as an Etude serves as a creative exercise before the final work.
+A C# / .NET library for advanced smoothing and signal processing ([**SonataSmooth.Tune**](https://www.nuget.org/packages/SonataSmooth.Tune)), with a hands-on study application (SonataSmooth.Tune.Etude) that lets you experiment, learn, and prepare for your own data processing masterpieces : much like an étude, a preparatory study before the finished composition.
 
 ## SonataSmooth.Tune & SonataSmooth.Tune.Etude
 ### Naming Philosophy
 
 [**SonataSmooth.Tune**](https://www.nuget.org/packages/SonataSmooth.Tune) is a C# / .NET library for advanced smoothing and signal processing, designed to help you "tune" your data with precision and clarity. The name "Tune" reflects the library's purpose : to refine and harmonize data, much like tuning an instrument to achieve the desired sound.
 
-**SonataSmooth.Tune.Etude** is the companion sample application : an "Etude" in the artistic sense. In music and art, an Etude is a study or exercise, often created to explore techniques or prepare for a final masterpiece. This sample application is crafted as a practical, hands-on study : a place to experiment, learn, and understand the capabilities of the SonataSmooth.Tune library before building your own full-scale applications. Think of it as a sketch or clay model - an essential step toward your own data processing "masterpiece."
+**SonataSmooth.Tune.Etude** is the companion sample application : an "Étude" in the artistic sense. In music and art, an Étude is a study or exercise, often created to explore techniques or prepare for a final masterpiece. This sample application is crafted as a practical, hands-on study : a place to experiment, learn, and understand the capabilities of the SonataSmooth.Tune library before building your own full-scale applications. Think of it as a sketch or clay model - an essential step toward your own data processing "masterpiece."
 
 <br>
 <div align="center">
@@ -22,7 +22,7 @@ A C# / .NET library for advanced smoothing and signal processing ([**SonataSmoot
 #### January 01, 2026
 > Initial release.
 
-## How to Use SonataSmooth.Tune (with Etude Sample)
+## How to Use SonataSmooth.Tune (with Étude Sample)
 
 This section describes how to use the SonataSmooth.Tune library, as demonstrated in the `SonataSmooth.Tune.Etude` sample application (`FrmMain.cs` and `FrmMain.Designer.cs`).
 
