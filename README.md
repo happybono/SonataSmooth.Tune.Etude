@@ -9,31 +9,33 @@ A C# / .NET library for advanced smoothing and signal processing ([**SonataSmoot
 **SonataSmooth.Tune.Etude** is the companion sample application : an "Étude" in the artistic sense. In music and art, an Étude is a study or exercise, often created to explore techniques or prepare for a final masterpiece. This sample application is crafted as a practical, hands-on study : a place to experiment, learn, and understand the capabilities of the SonataSmooth.Tune library before building your own full-scale applications. Think of it as a sketch or clay model - an essential step toward your own data processing "masterpiece."
 
 ## Special Licensing Notice : Binomial Weighted Median Filter  
-Most components of this project are licensed under MIT.  
+> [!Important]  
+> Most components of this project are licensed under MIT.  
+>
+> However, the **Binomial Weighted Median Filter (based on Pascal’s Triangle coefficients)** is patent-pending and has special restrictions :  
+>
+> ✅ Free for non-commercial research, education, and personal projects  
+> ❌ Commercial use, reproduction, or distribution requires prior written consent from the patent holder  
+> ⚠️ By using this filter, you agree to respect its patent-pending status  
 
-However, the **Binomial Weighted Median Filter (based on Pascal’s Triangle coefficients)** is patent-pending and has special restrictions :  
-
-- ✅ Free for non-commercial research, education, and personal projects  
-- ❌ Commercial use, reproduction, or distribution requires prior written consent from the patent holder  
-- ⚠️ By using this filter, you agree to respect its patent-pending status  
-
-## Patent-Pending Component Restriction  
-Notwithstanding any rights granted under the MIT License applicable to the majority of this project,  
-the algorithm known as the **Binomial Weighted Median Filter, derived from Pascal’s Triangle and its coefficients**  
-(the "Restricted Component") is subject to additional limitations.  
-
-Commercial use, reproduction, distribution, or incorporation of the Restricted Component into products or services  
-is strictly prohibited without the prior written consent of the patent holder.  
-
-Any commercial exploitation - including but not limited to sale, licensing, or revenue-generating activities :  
-requires a separate agreement with the patent holder.  
-
-Non-commercial research, educational activities, and personal use are expressly permitted,  
-provided that such use does not constitute or support a commercial activity.  
-
-By accessing or using the Restricted Component, you acknowledge its patent-pending status and agree to comply with these restrictions.  
-
-**This restriction applies retroactively and prospectively to all commits, contributions, and versions of this repository, regardless of the date of disclosure or commit history.**
+## Patent-Pending Component Restriction 
+> [!CAUTION]
+> Notwithstanding any rights granted under the MIT License applicable to the majority of this project,  
+> the algorithm known as the **Binomial Weighted Median Filter, derived from Pascal’s Triangle and its coefficients**  
+> (the "Restricted Component") is subject to additional limitations.  
+>
+> Commercial use, reproduction, distribution, or incorporation of the Restricted Component into products or services  
+> is strictly prohibited without the prior written consent of the patent holder.  
+>
+> Any commercial exploitation - including but not limited to sale, licensing, or revenue-generating activities :  
+> requires a separate agreement with the patent holder.  
+>
+> Non-commercial research, educational activities, and personal use are expressly permitted,  
+> provided that such use does not constitute or support a commercial activity.  
+>
+> By accessing or using the Restricted Component, you acknowledge its patent-pending status and agree to comply with these restrictions.  
+>
+> **This restriction applies retroactively and prospectively to all commits, contributions, and versions of this repository, regardless of the date of disclosure or commit history.**
 
 <br>
 <div align="center">
