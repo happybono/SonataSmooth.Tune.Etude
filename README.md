@@ -46,6 +46,9 @@ A C# / .NET library for advanced smoothing and signal processing ([**SonataSmoot
 #### January 01, 2026
 > Initial release.
 
+#### April 15, 2026
+> Updated sample code dependencies to the latest package versions.
+
 ## How to Use SonataSmooth.Tune (with Étude Sample)
 
 This section describes how to use the SonataSmooth.Tune library, as demonstrated in the `SonataSmooth.Tune.Etude` sample application (`FrmMain.cs` and `FrmMain.Designer.cs`).
